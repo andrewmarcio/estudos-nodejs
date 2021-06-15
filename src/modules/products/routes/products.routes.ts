@@ -7,5 +7,8 @@ const productController = new ProductController();
 
 productRouter.get('/', productController.index)
 productRouter.get('/:id', productController.show)
+productRouter.post('/', productController.store)
+productRouter.put('/:id', productController.update)
+productRouter.delete('/:id', productController.delete)
 
 export default productRouter

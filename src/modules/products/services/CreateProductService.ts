@@ -5,8 +5,9 @@ import { ProductsRepository } from "../typeorm/repositories/ProductsRepository"
 
 interface ProductRequest {
     name: string,
-    price: number;
-    quantity: number;
+    description: string,
+    value: number,
+    quantity: number
 }
 
 class CreateProductService {
